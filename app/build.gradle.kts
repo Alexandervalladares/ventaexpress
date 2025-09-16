@@ -39,6 +39,7 @@ android {
 
 dependencies {
     implementation(platform(libs.firebase.bom))
+    implementation("com.facebook.android:facebook-login:latest.release")
     implementation(libs.firebase.auth.ktx)
     implementation(libs.firebase.database.ktx)
     implementation(libs.recyclerview)
