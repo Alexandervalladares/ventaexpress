@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.empresa.ventaexpresstecnologia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="VentaExpress Tecnología"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".VentasActivity" />
+        <activity android:name=".ClientesActivity" />
+        <activity android:name=".ProductosActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

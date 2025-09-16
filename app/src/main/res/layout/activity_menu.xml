@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/productosButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productos" />
+
+    <Button
+        android:id="@+id/clientesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clientes" />
+
+    <Button
+        android:id="@+id/ventasButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventas" />
+</LinearLayout>

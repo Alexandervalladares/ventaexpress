@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Spinner android:id="@+id/spinnerClientes"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Spinner android:id="@+id/spinnerProductos"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/cantidadEditText"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Cantidad" android:inputType="number"/>
+        <Button android:id="@+id/agregarProdBtn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Agregar Producto"/>
+        <TextView android:id="@+id/productosSeleccionadosTV"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text=""/>
+        <Button android:id="@+id/registrarVentaBtn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Registrar Venta"/>
+    </LinearLayout>
+</ScrollView>

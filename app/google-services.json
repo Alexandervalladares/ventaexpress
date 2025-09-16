@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "1053993168016",
+    "firebase_url": "https://ventaexpress-5b829-default-rtdb.firebaseio.com",
+    "project_id": "ventaexpress-5b829",
+    "storage_bucket": "ventaexpress-5b829.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053993168016:android:d09a000674e26c1eb1bc15",
+        "android_client_info": {
+          "package_name": "com.empresa.ventaexpresstecnologia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LIaoDuPR4Xu10SHBVZ2P8J2R4fIaJ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053993168016:android:d2e1d78517172106b1bc15",
+        "android_client_info": {
+          "package_name": "com.example.ventaexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LIaoDuPR4Xu10SHBVZ2P8J2R4fIaJ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053993168016:android:7840b42963339fceb1bc15",
+        "android_client_info": {
+          "package_name": "com.tecnstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LIaoDuPR4Xu10SHBVZ2P8J2R4fIaJ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053993168016:android:9dc061f939e21445b1bc15",
+        "android_client_info": {
+          "package_name": "com.ventaexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LIaoDuPR4Xu10SHBVZ2P8J2R4fIaJ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053993168016:android:d93f647109657f94b1bc15",
+        "android_client_info": {
+          "package_name": "com.ventaexpress.tech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3LIaoDuPR4Xu10SHBVZ2P8J2R4fIaJ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053993168016-0dg4vqvh675n8bo3jnje72epnfdogst9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
