@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#6200EE</color>
+    <color name="primaryVariant">#3700B3</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="accent">#03DAC5</color>
+    <color name="colorSurface">#FFFFFF</color> <!-- Este es el color que te falta -->
 </resources>

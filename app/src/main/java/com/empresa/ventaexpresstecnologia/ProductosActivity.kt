@@ -8,6 +8,7 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import android.content.Intent
 import com.empresa.ventaexpresstecnologia.modelo.Producto
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -15,14 +16,24 @@ import com.google.firebase.database.*
 class ProductosActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var adapter: ProductoAdapter
+    private lateinit var auth: FirebaseAuth
     private val productos = mutableListOf<Producto>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
 
-        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
-        database = FirebaseDatabase.getInstance().reference.child("empleados").child(userId).child("productos")
+        auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser ?: run {
+            goToLogin()
+            return
+        }
+
+        database = FirebaseDatabase.getInstance().reference
+            .child("empleados")
+            .child(currentUser.uid)
+            .child("productos")
+
 
         adapter = ProductoAdapter(productos,
             onEdit = { producto -> editarProductoDialog(producto) },
@@ -47,6 +58,21 @@ class ProductosActivity : AppCompatActivity() {
             }
             override fun onCancelled(error: DatabaseError) {}
         })
+    }
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser == null) {
+            goToLogin()
+        }
+    }
+
+    private fun goToLogin() {
+        startActivity(
+            Intent(this, LoginActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+        )
+        finish()
     }
 
     private fun agregarProductoDialog() {

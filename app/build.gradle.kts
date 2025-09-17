@@ -15,6 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         manifestPlaceholders["facebookAppId"] = "1155084926474547" // tu App ID real
+        manifestPlaceholders["appAuthRedirectScheme"] = "myapp"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,6 +41,7 @@ android {
 dependencies {
     implementation(platform(libs.firebase.bom))
     implementation("com.facebook.android:facebook-login:latest.release")
+    implementation("net.openid:appauth:0.11.1")
     implementation(libs.firebase.auth.ktx)
     implementation(libs.firebase.database.ktx)
     implementation(libs.recyclerview)

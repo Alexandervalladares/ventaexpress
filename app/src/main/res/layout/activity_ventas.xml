@@ -1,24 +1,76 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="vertical" android:padding="24dp"
-        android:layout_width="match_parent" android:layout_height="wrap_content">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
 
-        <Spinner android:id="@+id/spinnerClientes"
-            android:layout_width="match_parent" android:layout_height="wrap_content"/>
-        <Spinner android:id="@+id/spinnerProductos"
-            android:layout_width="match_parent" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/cantidadEditText"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:hint="Cantidad" android:inputType="number"/>
-        <Button android:id="@+id/agregarProdBtn"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Agregar Producto"/>
-        <TextView android:id="@+id/productosSeleccionadosTV"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text=""/>
-        <Button android:id="@+id/registrarVentaBtn"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Registrar Venta"/>
-    </LinearLayout>
-</ScrollView>
+    <Spinner
+        android:id="@+id/spinnerClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/selecciona_cliente" />
+
+    <Spinner
+        android:id="@+id/spinnerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:prompt="@string/selecciona_producto" />
+
+    <EditText
+        android:id="@+id/cantidadEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_cantidad"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/agregarProdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/agregar_producto" />
+
+    <TextView
+        android:id="@+id/productosSeleccionadosTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/sin_productos_seleccionados" />
+
+    <Button
+        android:id="@+id/registrarVentaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/registrar_venta" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/historial_ventas"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ventasRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/totalGeneradoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/total_generado_inicial"
+        android:textStyle="bold" />
+
+</LinearLayout>

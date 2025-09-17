@@ -25,6 +25,14 @@
         android:layout_height="wrap_content"
         android:text="Iniciar sesión" />
 
+
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse" />
     <com.facebook.login.widget.LoginButton
         android:id="@+id/facebookLoginButton"
         android:layout_width="match_parent"
@@ -33,9 +41,4 @@
         android:text="Iniciar sesión con Facebook"/>
 
 
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrarse" />
 </LinearLayout>

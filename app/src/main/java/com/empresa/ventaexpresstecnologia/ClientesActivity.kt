@@ -2,6 +2,7 @@ package com.empresa.ventaexpresstecnologia
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.content.Intent
 import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
@@ -15,14 +16,23 @@ import com.google.firebase.database.*
 class ClientesActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var adapter: ClienteAdapter
+    private lateinit var auth: FirebaseAuth
     private val clientes = mutableListOf<Cliente>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clientes)
 
-        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
-        database = FirebaseDatabase.getInstance().reference.child("empleados").child(userId).child("clientes")
+        auth = FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser ?: run {
+            goToLogin()
+            return
+        }
+
+        database = FirebaseDatabase.getInstance().reference
+            .child("empleados")
+            .child(currentUser.uid)
+            .child("clientes")
 
         adapter = ClienteAdapter(clientes,
             onEdit = { cliente -> editarClienteDialog(cliente) },
@@ -47,6 +57,21 @@ class ClientesActivity : AppCompatActivity() {
             }
             override fun onCancelled(error: DatabaseError) {}
         })
+    }
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser == null) {
+            goToLogin()
+        }
+    }
+
+    private fun goToLogin() {
+        startActivity(
+            Intent(this, LoginActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+        )
+        finish()
     }
 
     private fun agregarClienteDialog() {

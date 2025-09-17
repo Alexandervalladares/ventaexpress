@@ -3,4 +3,25 @@
     <string name="facebook_app_id">1155084926474547</string>
     <string name="fb_login_protocol_scheme">2aab52be77a98ec2e66f0275577b6f04</string>
     <string name="facebook_client_token">5ef389d956d63182d8e3426373d21e3e</string>
+    <string name="bienvenida_usuario">Bienvenido, %1$s</string>
+    <string name="empleado_sin_correo">Empleado</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="sin_productos_seleccionados">Aún no has agregado productos.</string>
+    <string name="total_parcial_format">Total: $%1$.2f</string>
+    <string name="total_generado_format">Total generado: $%1$.2f</string>
+    <string name="total_generado_inicial">Total generado: $0.00</string>
+    <string name="historial_ventas">Historial de ventas</string>
+    <string name="selecciona_producto">Selecciona un producto</string>
+    <string name="selecciona_cliente">Selecciona un cliente</string>
+    <string name="selecciona_productos_para_vender">Selecciona al menos un producto</string>
+    <string name="cantidad_invalida">Ingresa una cantidad válida</string>
+    <string name="hint_cantidad">Cantidad</string>
+    <string name="agregar_producto">Agregar producto</string>
+    <string name="registrar_venta">Registrar venta</string>
+    <string name="stock_insuficiente">No hay stock suficiente para %1$s</string>
+    <string name="venta_registrada">Venta registrada</string>
+    <string name="error_registrar_venta">No se pudo registrar la venta</string>
+    <string name="detalle_producto_venta_format">%1$s x%2$d - $%3$.2f</string>
+    <string name="detalle_cliente_format">Cliente: %1$s</string>
+    <string name="detalle_fecha_format">Fecha: %1$s</string>
 </resources>
