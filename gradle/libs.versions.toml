@@ -19,8 +19,12 @@ firebaseDatabase = "22.0.0"
 credentials = "1.5.0"
 credentialsPlayServicesAuth = "1.5.0"
 googleid = "1.1.1"
+playServicesAuth = "21.2.0"
+browser = "1.8.0"
 
 [libraries]
+play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
 facebook-login = { module = "com.facebook.android:facebook-login", version = "16.0.0" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
 firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebase-auth-ktx" }

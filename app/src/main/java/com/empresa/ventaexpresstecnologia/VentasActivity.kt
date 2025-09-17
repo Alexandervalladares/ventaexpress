@@ -88,9 +88,9 @@ class VentasActivity : AppCompatActivity() {
         totalGeneradoTextView.text = getString(R.string.total_generado_format, 0.0)
 
 
-            escucharClientes()
-            escucharProductos()
-            escucharVentas()
+        escucharClientes()
+        escucharProductos()
+        escucharVentas()
 
             agregarProdBtn.setOnClickListener { agregarProductoSeleccionado() }
             registrarVentaBtn.setOnClickListener { registrarVenta() }

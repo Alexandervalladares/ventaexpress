@@ -24,4 +24,7 @@
     <string name="detalle_producto_venta_format">%1$s x%2$d - $%3$.2f</string>
     <string name="detalle_cliente_format">Cliente: %1$s</string>
     <string name="detalle_fecha_format">Fecha: %1$s</string>
+    <string name="content_description_decorative">Elemento decorativo</string>
+    <string name="content_description_search">Buscar productos</string>
+    <string name="content_description_filter">Filtrar catálogo</string>
 </resources>
