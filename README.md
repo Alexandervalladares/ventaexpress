@@ -1,7 +1,7 @@
 
 ## Video demostrativo
 
-[![Ver demostración en video] https://drive.google.com/drive/folders/1LAQ2YXJEhxyJK2SZgAv6Q4jXTYRYZmDf?usp=drive_link
+[![Ver demostración en video] https://drive.google.com/file/d/1HuK86V_4yOBS0ihRUZCFym0FyN_pkHCG/view?usp=sharing
 INTEGRANTES 
 ALEXANDER VALLADARES VA230394
 Enrique Delgado Peñate DP240093
