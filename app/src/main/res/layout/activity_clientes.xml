@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Botón agregar cliente -->
+        <Button
+            android:id="@+id/agregarClienteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Cliente"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_outline"
+            android:padding="12dp"
+            android:textAllCaps="false" />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#55FFFFFF" />
+        <Button
+            android:id="@+id/volverMenuBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al menú"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Lista de clientes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/clientesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

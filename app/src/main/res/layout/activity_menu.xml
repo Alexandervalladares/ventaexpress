@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:id="@+id/contentSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true">
+
+        <!-- Usuario -->
+        <TextView
+            android:id="@+id/usuarioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="" />
+
+        <!-- Botón Productos -->
+        <Button
+            android:id="@+id/productosButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Productos"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_outline" />
+
+        <!-- Botón Clientes -->
+        <Button
+            android:id="@+id/clientesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Clientes"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_outline" />
+
+        <!-- Botón Ventas -->
+        <Button
+            android:id="@+id/ventasButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Ventas"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_outline" />
+    </LinearLayout>
+
+    <!-- Botón Cerrar Sesión (abajo y centrado) -->
+    <Button
+        android:id="@+id/cerrarSesionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/cerrar_sesion"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_logout" />
+
+</RelativeLayout>

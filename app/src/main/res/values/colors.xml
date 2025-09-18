@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#6200EE</color>
+    <color name="primaryVariant">#3700B3</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <color name="colorPrimary">#0D0D40</color>
+    <color name="colorPrimaryDark">#3D00A0</color>
+    <color name="colorAccent">#00FFD1</color>
+
+    <!-- ⬇️ NUEVOS para que compile -->
+    <color name="accent">#00FFD1</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <color name="socialSectionBg">#22000000</color>
+    <color name="facebookNeon">#00E5FF</color>
+    <color name="githubNeon">#FFFFFF</color>
+</resources>

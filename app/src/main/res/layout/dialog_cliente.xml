@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/clientFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Cliente"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Formulario -->
+    <LinearLayout
+        android:id="@+id/clientForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_below="@id/clientFormTitle"
+        android:layout_marginTop="40dp">
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/nombreClienteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del cliente"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/correoClienteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/telefonoClienteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"/>
+    </LinearLayout>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/guardarClienteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cliente"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_outline"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"/>
+
+</RelativeLayout>

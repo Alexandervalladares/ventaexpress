@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/productFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Producto"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Formulario -->
+    <LinearLayout
+        android:id="@+id/productForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_below="@id/productFormTitle"
+        android:layout_marginTop="40dp">
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/nombreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del producto"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/descripcionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Precio -->
+        <EditText
+            android:id="@+id/precioEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Stock -->
+        <EditText
+            android:id="@+id/stockEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DDFFFFFF"/>
+    </LinearLayout>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/guardarProductoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Producto"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_outline"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"/>
+</RelativeLayout>
